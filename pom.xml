@@ -10,9 +10,9 @@
 	<name>git-release-example Maven Webapp</name>
 
 	<scm>
-		<connection>scm:git:git@github.com:sundeepbobba/git-release-example.git</connection>
-		<developerConnection>scm:git:git@github.com:sundeepbobba/git-release-example.git</developerConnection>
-		<url>scm:git:git@github.com:sundeepbobba/git-release-example.git</url>
+		<connection>scm:git:https://github.com/devops-aws/git-release-example.git</connection>
+		<developerConnection>scm:git:https://github.com/devops-aws/git-release-example.git</developerConnection>
+		<url>scm:git:https://github.com/devops-aws/git-release-example.git</url>
           <tag>HEAD</tag>
   </scm>
 
@@ -21,14 +21,14 @@
 		<repository>
 			<id>nexusreleases</id>
 			<name>My releases</name>
-			<url>http://192.168.0.66:8081/repository/Releases</url>
+			<url>http://127.0.0.1:8081/repository/maven-releases/</url>
 		</repository>
 
 		<!-- Publish snapshots here -->
 		<snapshotRepository>
 			<id>nexussnapshots</id>
 			<name>My snapshots</name>
-			<url>http://192.168.0.66:8081/repository/Snapshots</url>
+			<url>http://127.0.0.1:8081/repository/maven-snapshots/</url>
 		</snapshotRepository>
 	</distributionManagement>
 
