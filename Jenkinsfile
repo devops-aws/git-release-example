@@ -6,20 +6,82 @@ pipeline {
         timestamps()
     }
     stages {
-        stage('Clean') {
+
+        stage('clean') {
+
             steps {
-                echo("Building project for ")
+
+                echo("Building project for me")
+
                 sleep(time:5,unit:'SECONDS')
-                sh 'mvn clean'
+
+		            sh 'mvn clean'
+
             }
+
             post {
+
                 success {
-                    echo("Build stage completed with result 'SUCCESS'.")
+
+                    echo("Clean stage completed with result 'SUCCESS'.")
+
                 }
+
                 failure {
-                    echo("Build stage completed with result 'FAILURE'.")
+
+                    echo("Clean stage completed with result 'FAILURE'.")
+
                 }
+
             }
+
         }
-}
+
+        stage('package') {
+
+            steps {
+
+                echo("Testing project for me")
+
+                sleep(time:5,unit:'SECONDS')
+
+		            sh 'mvn package'
+
+            }
+
+            post {
+
+                success {
+
+                    echo("package stage completed with result 'SUCCESS'.")
+
+                }
+
+                failure {
+
+                    echo("package stage completed with result 'FAILURE'.")
+
+                }
+
+            }
+
+        }
+
+    }
+
+    post {
+
+        success {
+
+            echo("Pipeline completed for me with result 'SUCCESS'.")
+
+        }
+
+        failure {
+
+            echo("Pipeline completed for me with result 'FAILURE'.")
+
+        }
+
+    }
 }
