@@ -4,18 +4,8 @@
 
 	<groupId>com.vitormp</groupId>
 	<artifactId>git-release-example</artifactId>
-<<<<<<< HEAD
-	<version>0.1.14-SNAPSHOT</version>
-<<<<<<< HEAD
-	<packaging>war<packaging>
-=======
 	<version>0.1.20-SNAPSHOT</version>
 	<packaging>war</packaging>
->>>>>>> 73df4c17a7b708b34bc5ca4697b445e8e3a4077f
-=======
-	<packaging>war</packaging>
->>>>>>> 6e89b99aa856e68fc57bfa21eabf77b503d5239c
-
 	<name>git-release-example Maven Webapp</name>
 
 	<scm>
