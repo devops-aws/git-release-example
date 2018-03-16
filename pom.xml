@@ -4,7 +4,7 @@
 
 	<groupId>com.vitormp</groupId>
 	<artifactId>git-release-example</artifactId>
-	<version>0.1.20-SNAPSHOT</version>
+	<version>0.1.21</version>
 	<packaging>war</packaging>
 	<name>git-release-example Maven Webapp</name>
 
@@ -12,7 +12,7 @@
 		<connection>scm:git:https://github.com/devops-aws/git-release-example.git</connection>
 		<developerConnection>scm:git:https://github.com/devops-aws/git-release-example.git</developerConnection>
 		<url>scm:git:https://github.com/devops-aws/git-release-example.git</url>
-          <tag>HEAD</tag>
+          <tag>git-release-example-0.1.21</tag>
   </scm>
 
 	<distributionManagement>
