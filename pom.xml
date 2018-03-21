@@ -4,8 +4,9 @@
 
 	<groupId>com.vitormp</groupId>
 	<artifactId>git-release-example</artifactId>
-	<version>0.1.22-SNAPSHOT</version>
+	<version>0.1.14-SNAPSHOT</version>
 	<packaging>war</packaging>
+
 	<name>git-release-example Maven Webapp</name>
 
 	<scm>
@@ -18,16 +19,16 @@
 	<distributionManagement>
 		<!-- Publish versioned releases here -->
 		<repository>
-			<id>nexus</id>
+			<id>nexusreleases</id>
 			<name>maven-releases</name>
-			<url>http://localhost:8081/repository/maven-releases/</url>
+			<url>http://54.172.11.101:8081/repository/maven-releases/</url>
 		</repository>
 
 		<!-- Publish snapshots here -->
 		<snapshotRepository>
-			<id>nexus</id>
+			<id>nexussnapshots</id>
 			<name>maven-snapshots</name>
-			<url>http://localhost:8081/repository/maven-snapshots/</url>
+			<url>http://54.172.11.101:8081/repository/maven-snapshots/</url>
 		</snapshotRepository>
 	</distributionManagement>
 
