@@ -20,15 +20,15 @@
 		<!-- Publish versioned releases here -->
 		<repository>
 			<id>nexusreleases</id>
-			<name>My releases</name>
-			<url>http://192.168.0.66:8081/repository/Releases</url>
+			<name>maven-releases</name>
+			<url>http://54.172.11.101:8081/repository/maven-releases/</url>
 		</repository>
 
 		<!-- Publish snapshots here -->
 		<snapshotRepository>
 			<id>nexussnapshots</id>
-			<name>My snapshots</name>
-			<url>http://192.168.0.66:8081/repository/Snapshots</url>
+			<name>maven-snapshots</name>
+			<url>http://54.172.11.101:8081/repository/maven-snapshots/</url>
 		</snapshotRepository>
 	</distributionManagement>
 
